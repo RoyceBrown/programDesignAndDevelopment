@@ -1,3 +1,3 @@
 # programDesignAndDevelopment
 
-Collects programs made for the class.
+Collects programs made for and related to the class.
