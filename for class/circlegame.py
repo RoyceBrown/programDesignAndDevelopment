@@ -15,9 +15,9 @@ if input('Would you like to play on hardmode? (y/n)\n') == 'y':
     hardmode = 1
 else:
     moves = 10
+    hardmode = 0
 if input('Would you like to enable the path tracer? (y/n)\n') == 'y':
     tracer = 1
-
 
 #constant bounds
 SpawnXMin = -150
@@ -74,10 +74,9 @@ for n in range(moves):
     distance = int(input('Enter a distance to move.\n'))
     forward(distance)
 
+    #check if the win condition is met
     currentX = xcor()
     currentY = ycor()
-
-    #check if the win condition is met
     if (currentX - goalX) ** 2 + (currentY - goalY) ** 2 < goalR ** 2:
         win = 1
         break
